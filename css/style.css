@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #FFFDF9; /* Warm White */
+    margin: 0;
+    padding: 20px;
+    color: #333333; /* Charcoal */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #FFFFFF; /* White for card background */
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #E9ECEF; /* Soft Gray shadow */
+}
+
+.pet-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.pet-card {
+    background: #FFFFFF; /* White */
+    border-radius: 8px;
+    box-shadow: 0 0 8px #E9ECEF; /* Soft Gray shadow */
+    overflow: hidden;
+    border-left: 5px solid #777777; /* Muted Gray for neutral border */
+    display: flex;
+    flex-direction: column;
+}
+
+.pet-card.lost {
+    border-color: #E74C3C; /* Rescue Red */
+}
+
+.pet-card.found {
+    border-color: #27AE60; /* Leaf Green */
+}
+
+.pet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pet-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.pet-info h2 {
+    margin-top: 0;
+    color: #333333; /* Charcoal */
+}
+
+.pet-info p {
+    margin: 8px 0;
+    color: #777777; /* Muted Gray for subtext */
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #777777; /* Muted Gray */
+}
+
+.success-msg {
+    background: #d4edda; /* you can keep this or update */
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+a {
+    color: #4A90E2; /* Paw Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FAD4D4; /* Petal Pink hover */
+}

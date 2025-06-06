@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/login_back.jpg) no-repeat center center fixed;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    color: #FFFDF9; /* Warm White */
+}
+
+h1 {
+    color: #D0F0C0; /* Light pastel green */
+    font-size: 45px;
+    position: relative;
+    transform: translate(7%, 12%);
+}
+
+.box {
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFDF9; /* Warm White */
+    top: 54%;
+    left: 75%;
+    position: absolute;
+    outline: solid 1px #FFFDF9;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 40px 30px;
+    height: auto;
+}
+
+.user {
+    width: 100px;
+    height: 100px;
+    outline-style: outset;
+    outline-color: #FFFDF9;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h2 {
+    margin: 1;
+    text-align: center;
+    font-size: 25px;
+    color: #FFFDF9;
+}
+
+main p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+form input {
+    font-size: 16px;
+    padding: 15px 10px;
+    width: 90%;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #81C784; /* Soft Leaf Green */
+}
+
+a:hover {
+    color: #A5D6A7; /* Lighter Leaf Green */
+    text-decoration-line: underline;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 15px;
+    width: 95%;
+    border: 0;
+    border-radius: 25px;
+    background-color: #4A90E2; /* Paw Blue */
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ABD; /* Deeper Blue */
+}

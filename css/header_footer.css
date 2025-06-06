@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFFDF9; /* Warm White */
+    color: #333333; /* Charcoal */
+}
+
+main {
+    flex-grow: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    background-color: #4A90E2; /* Paw Blue */
+    color: #FFFFFF;
+    border-bottom: 4px solid #F5A623; /* Soft Orange */
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav .menu {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav .menu li {
+    margin-left: 20px;
+}
+
+header nav .menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav .menu li a:hover {
+    color: #FAD4D4; /* Petal Pink */
+}
+
+header nav .auth-buttons .menu {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    margin-left: 20px;
+}
+
+header nav .auth-buttons .menu:hover {
+    color: #FAD4D4; /* Petal Pink */
+}
+
+header nav .auth-buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+header nav .auth-buttons .btn {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #1c3977; /* Leaf Green */
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav .auth-buttons .btn:hover {
+    background-color: #48aad1; /* darker Leaf Green variant */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 40px;
+    background-color: #4A90E2; /* Paw Blue */
+    color: #ffffff;
+    border-top: 4px solid #F5A623; /* Soft Orange */
+}

@@ -1,0 +1,137 @@
+/* edit_lostfound.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #acc2ff, #FFFFFF); /* Warm White to White */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #333333; /* Charcoal text main */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: #FFFFFF; /* White */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    border: 1px solid #E9ECEF; /* Soft Gray border */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333; /* Charcoal */
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #777777; /* Muted Gray */
+}
+
+.required {
+    color: #E74C3C; /* Rescue Red */
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #E9ECEF; /* Soft Gray */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    color: #333333; /* Charcoal text */
+    background-color: #FFFFFF; /* White */
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+input[type="file"]:focus {
+    border-color: #4A90E2; /* Paw Blue on focus */
+    outline: none;
+    background-color: #FFFDF9; /* Slight warm white on focus */
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    flex: 1;
+    min-width: 120px;
+    transition: background-color 0.3s ease;
+    color: #FFFFFF; /* Default text color on buttons */
+}
+
+.btn-primary {
+    background-color: #4A90E2; /* Paw Blue */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #FAD4D4; /* Petal Pink hover */
+    color: #333333; /* dark text on hover */
+}
+
+.btn-secondary {
+    background-color: #F5A623; /* Soft Orange */
+    color: #333333; /* Charcoal */
+}
+
+.btn-secondary:hover {
+    background-color: #E9ECEF; /* Soft Gray hover */
+    color: #777777; /* Muted Gray */
+}
+
+.image-preview {
+    margin-top: 10px;
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    border: 1px solid #E9ECEF; /* Soft Gray border */
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .form-actions {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+        min-width: unset;
+    }
+}

@@ -1,0 +1,158 @@
+/* lostfound_list.css */
+
+body {
+    background: linear-gradient(135deg, #FFFDF9, #FFFFFF);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px 20px;
+    color: #333333; /* Charcoal */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #4A90E2; /* Paw Blue */
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* Success Message */
+.success-msg {
+    background: #E9ECEF; /* Soft Gray */
+    border: 1px solid #4A90E2; /* Paw Blue */
+    color: #4A90E2;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.5rem;
+    color: #4A90E2; /* Paw Blue */
+    margin: 30px 0 20px;
+    border-left: 6px solid #4A90E2;
+    padding-left: 12px;
+}
+
+/* Pet Grid */
+.pet-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Cards */
+.pet-card {
+    background: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    border-top: 6px solid transparent;
+}
+
+.pet-card.lost {
+    border-color: #E74C3C; /* Rescue Red */
+}
+
+.pet-card.found {
+    border-color: #27AE60; /* Leaf Green */
+}
+
+.pet-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.pet-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Info Section */
+.pet-info {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pet-info h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #4A90E2; /* Paw Blue */
+}
+
+.pet-info p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333333; /* Charcoal */
+}
+
+.pet-info .date {
+    font-size: 0.85rem;
+    color: #777777; /* Muted Gray */
+    margin-top: 10px;
+}
+
+/* Link Button */
+a {
+    display: inline-block;
+    text-align: center;
+    background-color: #4A90E2; /* Paw Blue */
+    color: #FFFFFF;
+    padding: 12px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background-color: #FAD4D4; /* Petal Pink */
+    color: #333333;
+}
+
+/* Filter Form */
+.filter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    background: #FFFDF9; /* Warm White */
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    font-size: 1rem;
+}
+
+.filter-form label {
+    font-weight: 600;
+    color: #333333; /* Charcoal */
+}
+
+.filter-form select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #E9ECEF; /* Soft Gray */
+    background-color: #FFFFFF;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.filter-form select:focus {
+    border-color: #4A90E2; /* Paw Blue */
+    outline: none;
+}
